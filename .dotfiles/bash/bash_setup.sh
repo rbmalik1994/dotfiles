@@ -41,7 +41,7 @@ elif [[ "$@" == "test" ]]; then
             fi
             rsync -uar --delete-after "${HOME}/${ACT_FILE}.bk" "${HOME}/${ACT_FILE}" >/dev/null 2>&1 || true;
         done < <(find "${HOME}/.dotfiles" -maxdepth 1 -type f -print0)
-        echo "Created symlinks...";
+        echo "Created symlinks...";e
     done < <(find "${HOME}" -mindepth 1 -maxdepth 1 -type d -iname ".dotfiles" -print0)
     ls -thora "${HOME}" | grep " -> ";
 else
