@@ -4,10 +4,10 @@ if [ -z "$USER" ]; then
     USER=$(id -un)
 fi
 
-mv /workspaces/.codespaces/.persistedshare/dotfiles $HOME/.dotfiles/bash
-mv /workspaces/.codespaces/.persistedshare/dotfiles $HOME/.dotfiles/github
-mv /workspaces/.codespaces/.persistedshare/dotfiles $HOME/.dotfiles/markdown
-mv /workspaces/.codespaces/.persistedshare/dotfiles $HOME/.dotfiles/vscode
+mv /workspaces/.codespaces/.persistedshare/dotfiles /workspaces/dotfiles/.dotfiles/bash
+mv /workspaces/.codespaces/.persistedshare/dotfiles /workspaces/dotfiles/.dotfiles/github
+mv /workspaces/.codespaces/.persistedshare/dotfiles /workspaces/dotfiles/.dotfiles/markdown
+mv /workspaces/.codespaces/.persistedshare/dotfiles /workspaces/dotfiles/.dotfiles/vscode
 
 cd $HOME
 
