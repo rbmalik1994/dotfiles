@@ -121,3 +121,4 @@ complete -o default -F _pip_completion pip
 export LESS="-NR";
 
 # chmod go-r ~/.kube/config
+

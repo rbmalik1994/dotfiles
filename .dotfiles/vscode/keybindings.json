@@ -1,0 +1,84 @@
+// Place your key bindings in this file to override the defaults
+[
+    // New files 
+    {
+        "key" : "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus",
+    },
+    {
+        "key" : "ctrl+shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletFocus",
+    },
+    // New workbench
+    {
+        "key" : "ctrl+shift+n",
+        "command": "workbench.action.newWindow",
+        "when": "!explorerViewletFocus",
+    },
+    // Terminals
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.createTerminalEditor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+`", //opt+` on macOS
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+alt+`", //ctrl+opt+` on macOS
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "workbench.action.terminal.runRecentCommand",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+w",
+        "command": "workbench.action.terminal.killAll",
+        "when": "terminalFocus"
+    },
+    // Emmet
+    {
+        "key": "alt+shift+w", //wrap emmet
+        "command": "editor.emmet.action.wrapWithAbbreviation",
+        "when": "editorHasSelection"
+    },
+    //Expand select 
+    {
+        "key": "alt+shift+j", //expand selection
+        "command": "editor.emmet.action.balanceOut"
+    },
+    {
+        "key": "alt+shift+k", //contact selection
+        "command": "editor.emmet.action.balanceIn"
+    },
+]
