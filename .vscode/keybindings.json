@@ -9,13 +9,13 @@
     {
         "key" : "ctrl+shift+n",
         "command": "explorer.newFolder",
-        "when": "explorerViewletFocus",
+        "when": "explorerViewletFocus"
     },
     // New workbench
     {
         "key" : "ctrl+shift+n",
         "command": "workbench.action.newWindow",
-        "when": "!explorerViewletFocus",
+        "when": "!explorerViewletFocus"
     },
     // Terminals
     {

@@ -1,6 +1,7 @@
 #!/bin/sh
 sudo apt install fzf
 sudo apt-get install fonts-powerline
+sudo 
 
 
 font(){
@@ -21,6 +22,7 @@ update(){
     echo " Cleanup "
     sudo apt-get autoremove -y
     sudo rm -rf /var/lib/apt/lists/*.
+    omz update
 
 }
 
@@ -40,11 +42,12 @@ zshrc() {
     echo "==========================================================="
     echo "                  Import zshrc                             "
     echo "-----------------------------------------------------------"
-    cat .zshrc > $HOME/.zshrc 
+    echo 
+    cat .zshrc > $HOME/.zshrc
 }
 
 #calling 
-font
+
 zshrc 
-omz update
 update
+font
