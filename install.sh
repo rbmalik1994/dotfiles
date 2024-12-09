@@ -19,10 +19,10 @@ update(){
     sudo apt-get update
     sudo apt-get -y install --no-install-recommends apt-utils dialog 2>$1
     sudo apt-get updgrade
+    sudo apt-get install shellcheck
     echo " Cleanup "
     sudo apt-get autoremove -y
-    sudo rm -rf /var/lib/apt/lists/*.
-    omz update
+    sudo rm -rf /var/lib/apt/lists/*. 
 
 }
 
@@ -32,7 +32,7 @@ zshrc() {
     echo "-----------------------------------------------------------"                    
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     echo "==========================================================="
-    echo "                 cloning zsh-zsh-nvm                       "
+    echo "                   cloning zsh-nvm                         "
     echo "-----------------------------------------------------------"                 
     git clone https://github.com/lukechilds/zsh-nvm ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-nvm
     echo "==========================================================="
@@ -50,4 +50,4 @@ zshrc() {
 
 zshrc 
 update
-font
+font 
