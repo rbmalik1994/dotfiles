@@ -4,7 +4,7 @@
     {
         "key" : "ctrl+n",
         "command": "explorer.newFile",
-        "when": "explorerViewletFocus",
+        "when": "explorerViewletFocus"
     },
     {
         "key" : "ctrl+shift+n",

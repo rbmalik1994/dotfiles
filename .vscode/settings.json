@@ -2,7 +2,6 @@
     //git
     "git.autofetch": true,
     "git.suggestSmartCommit": true,
-
     // workbench
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Dracula Theme",
@@ -27,14 +26,12 @@
     "workbench.editor.openPositioning": "last",
     "window.confirmBeforeClose": "keyboardOnly",
     "workbench.editor.revealIfOpen": true,
-
     //explorer
     "explorer.autoReveal": true,
     "explorer.autoRevealExclude": {
         "**/node_modules": true,
         "**/bower_components": true
     },
-
     //editor 
     "editor.minimap.autohide": true,
     "editor.minimap.enabled": false,
@@ -51,19 +48,14 @@
         "comments": "on",
         "strings": "on"
     },
-
     // files 
     "files.autoSave": "afterDelay",
-
     // Terminal 
     "terminal.integrated.shellIntegration.enabled": true,
     // AutoDoctString 
-    "autoDocString.includeName" : true,
-
+    "autoDocString.includeName": true,
     //json 
-    "[json]" : {
-    },
-
+    "[json]": {},
     //Python 
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false,
@@ -71,9 +63,8 @@
         "editor.wordBasedSuggestions": "off"
     },
     "python.analysis.autoFormatStrings": true,
-    
     // Peacock
-    "peacock.affectEditorGroupBorder":  true,
+    "peacock.affectEditorGroupBorder": true,
     "peacock.keepBadgeColor": true,
     "peacock.keepForegroundColor": true,
     "peacock.surpriseMeOnStartup": true,
@@ -83,7 +74,6 @@
     "peacock.affectTitleBar": false,
     "peacock.affectSideBarBorder": true,
     "peacock.affectActivityBar": false,
-    
     //TODO Highlight
     "todohighlight.toggleURI": true,
     "todohighlight.isCaseSensitive": false,
@@ -101,16 +91,18 @@
         "**/*.md",
         "**/*.py"
     ],
-
     // TODO Tre 
     "todo-tree.general.showActivityBarBadge": true,
     "todo-tree.general.tags": [
         "BUG",
         "HACK",
         "FIX",
-        "FIXME","FIXIT",
+        "FIXME",
+        "FIXIT",
         "MARK",
-        "todo", "ToDo", "tOdO",
+        "todo",
+        "ToDo",
+        "tOdO",
         "TODO",
         "XXX",
         "[ ]",
@@ -134,8 +126,16 @@
         "white"
     ],
     "todo-tree.general.tagGroups": {
-        "FIX" : ["FIXME", "FIXIT"],
-        "TODO" : ["TODO", "todo", "ToDo", "tOdO"]
+        "FIX": [
+            "FIXME",
+            "FIXIT"
+        ],
+        "TODO": [
+            "TODO",
+            "todo",
+            "ToDo",
+            "tOdO"
+        ]
     },
     "todo-tree.highlights.defaultHighlight": {
         "type": "tag-and-comment",
@@ -144,14 +144,14 @@
         "opacity": 90,
     },
     "todo-tree.highlights.customHighlight": {
-        "NOTE" : {
+        "NOTE": {
             "background": "#FFA500",
             "iconColour": "#FFA500",
             "gutterIcon": true,
             "icon": "file",
             "type": "text"
         },
-        "TODO" : {
+        "TODO": {
             "background": "#FFD703",
             "iconColour": "#FFD703",
             "icon": "tasklist",
@@ -199,14 +199,14 @@
             "gutterIcon": true,
             "icon": "issue-closed"
         },
-        "QUES" : {
+        "QUES": {
             "background": "#000",
             "foreground": "#fff",
             "iconColour": "#000",
             "gutterIcon": true,
             "icon": "question"
         },
-        "ANS" : {
+        "ANS": {
             "background": "#FFF",
             "iconColour": "#FFF",
             "gutterIcon": true,
@@ -219,7 +219,7 @@
             "gutterIcon": true,
             "icon": "eye"
         },
-        "REF" : {
+        "REF": {
             "foreground": "#000",
             "background": "#808080",
             "iconColour": "#808080",
@@ -242,9 +242,6 @@
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    "projectManager.git.baseFolders": [
-        "./Github/Project"
-    ],
     "githubPullRequests.remotes": [
         "origin",
         "upstream",
@@ -260,33 +257,29 @@
         "ISSUE",
         "HACK",
         "*"
-    ],    
+    ],
     "githubPullRequests.queries": [
-
-        
         {
             "label": "Waiting For My Review",
-            "query": "is:open review-requested:${user} repo:${repository}"
+            "query": "is:open review-requested:${user} repo:${org}/${repository}"
         },
         {
             "label": "Assigned To Me",
-            "query": "is:issue is:open repo:${repository}"
+            "query": "is:issue is:open repo:${org}/${repository}"
         },
         {
             "label": "Created By Me",
-            "query": "is:open author:${user} repo:{$org}/${repository}"
+            "query": "is:open author:${user} repo:${org}/${repository}"
         },
         {
             "label": "Mentioned By Me",
-            "query": "is:open mentions:${user} repo:{$org}/${repository}"
+            "query": "is:open mentions:${user} repo:${org}/${repository}"
         }
     ],
     "githubIssues.queries": [
-
-
         {
             "label": "My Issues",
-            "query": "is:open  assigne:${user}"
+            "query": "is:open  assigne:${user} repo:${org}/${repository}"
             // ,
             // "groupBy": [
             //     "milestone"
@@ -294,7 +287,7 @@
         },
         {
             "label": "All",
-            "query" : "is:open"
+            "query": "is:open repo:${org}/${repository}"
         },
         {
             "label": "Created Issues",
@@ -305,6 +298,12 @@
             "query": "state:open repo:${org}/${repository} sort:updated-desc user:${user}"
         }
     ],
-    "peacock.remoteColor": "#815e89"
-
+    "githubIssues.issueBranchTitle": "Zireal-Inc/Magma-Chaos/issue/${issueNumber}",
+	"githubPullRequests.showPullRequestNumberInTree": true,
+	"github.experimental.multipleAccounts": true,
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+    "peacock.remoteColor": "#815e89",
+    "nxConsole.nxWorkspacePath": ""
 }
