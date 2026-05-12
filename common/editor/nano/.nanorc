@@ -1,0 +1,15 @@
+set autoindent
+set constantshow
+set historylog
+set linenumbers
+set mouse
+set smooth
+set tabsize 2
+set whitespace "  "
+set titlecolor white,blue
+set statuscolor white,green
+set keycolor brightyellow
+set functioncolor brightcyan
+set numbercolor brightblack
+set selectedcolor white,magenta
+
