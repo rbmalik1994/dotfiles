@@ -1,0 +1,6 @@
+name: docker
+description: Docker CLI and compose tooling.
+package_groups:
+  - docker
+setup:
+  - scripts/dev/docker.sh

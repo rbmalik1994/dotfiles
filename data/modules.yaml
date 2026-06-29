@@ -1,0 +1,71 @@
+base:
+  description: Core command line tools and directory conventions.
+  packages:
+    - git
+    - curl
+    - wget
+    - ca-certificates
+
+shell-zsh:
+  description: Zsh shell configuration.
+  packages:
+    - zsh
+
+git:
+  description: Git config, ignore rules, and identity templates.
+  packages:
+    - git
+
+starship:
+  description: Cross-shell prompt.
+  packages:
+    - starship
+
+vscode:
+  description: VS Code settings and extensions.
+  packages:
+    - code
+
+neovim:
+  description: Neovim editor.
+  packages:
+    - neovim
+
+tmux:
+  description: Terminal multiplexer.
+  packages:
+    - tmux
+
+python:
+  description: Python development tools.
+  packages:
+    - python3
+    - pipx
+    - uv
+    - ruff
+
+node:
+  description: Node.js development tools.
+  packages:
+    - nodejs
+    - pnpm
+
+docker:
+  description: Docker CLI and compose tools.
+  packages:
+    - docker
+    - docker-compose
+
+server:
+  description: Remote server defaults without GUI assumptions.
+  packages:
+    - openssh-client
+    - htop
+
+personal:
+  description: Personal machine defaults.
+  packages: []
+
+work:
+  description: Work machine defaults.
+  packages: []

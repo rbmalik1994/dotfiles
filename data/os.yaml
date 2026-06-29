@@ -1,0 +1,11 @@
+macos:
+  package_manager: brew
+  gui_supported: true
+
+linux:
+  package_manager: auto
+  gui_supported: true
+
+wsl:
+  package_manager: apt
+  gui_supported: false

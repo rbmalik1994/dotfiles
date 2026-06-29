@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+
+if [ "${DOTFILES_SKIP_PACKAGES:-0}" = "1" ]; then
+  printf '%s\n' "Skipping package installation because DOTFILES_SKIP_PACKAGES=1"
+  exit 0
+fi
+
+source_dir={{ .chezmoi.sourceDir | quote }}
+profile={{ .profile | quote }}
+extra_modules={{ .extraModules | quote }}
+gui_apps={{ .guiApps | quote }}
+
+"$source_dir/scripts/bootstrap/install-packages.sh" "$profile" "$extra_modules" "$gui_apps"

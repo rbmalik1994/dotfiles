@@ -1,0 +1,6 @@
+name: starship
+description: Starship prompt.
+depends:
+  - shell-zsh
+package_groups:
+  - core

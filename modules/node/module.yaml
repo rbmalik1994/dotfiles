@@ -1,0 +1,6 @@
+name: node
+description: Node.js development tools.
+package_groups:
+  - node
+setup:
+  - scripts/dev/node.sh

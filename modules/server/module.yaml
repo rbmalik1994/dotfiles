@@ -1,0 +1,4 @@
+name: server
+description: Remote server defaults without GUI assumptions.
+package_groups:
+  - server

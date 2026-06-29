@@ -1,0 +1,4 @@
+name: linux-desktop
+description: Linux desktop setup hooks.
+os:
+  - linux

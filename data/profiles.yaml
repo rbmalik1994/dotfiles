@@ -1,0 +1,51 @@
+minimal:
+  description: Base interactive shell and Git setup.
+  modules:
+    - base
+    - shell-zsh
+    - git
+    - starship
+
+server:
+  description: Terminal-first setup for remote machines.
+  modules:
+    - minimal
+    - server
+    - tmux
+    - neovim
+    - python
+    - node
+
+python-dev:
+  description: Python development workstation.
+  modules:
+    - minimal
+    - python
+    - neovim
+    - vscode
+
+node-dev:
+  description: Node.js development workstation.
+  modules:
+    - minimal
+    - node
+    - vscode
+
+fullstack:
+  description: Python, Node, Docker, and editor tooling.
+  modules:
+    - python-dev
+    - node-dev
+    - docker
+
+personal:
+  description: Fullstack setup with personal defaults.
+  modules:
+    - fullstack
+    - personal
+
+work:
+  description: Fullstack setup with work defaults.
+  modules:
+    - fullstack
+    - work

@@ -1,0 +1,6 @@
+name: python
+description: Python development tools.
+package_groups:
+  - python
+setup:
+  - scripts/dev/python.sh

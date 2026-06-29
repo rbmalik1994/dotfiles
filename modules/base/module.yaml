@@ -1,0 +1,4 @@
+name: base
+description: Core command line tools and directory conventions.
+package_groups:
+  - core

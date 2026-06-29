@@ -1,0 +1,6 @@
+name: git
+description: Git config, ignore rules, and identity templates.
+depends:
+  - base
+package_groups:
+  - core

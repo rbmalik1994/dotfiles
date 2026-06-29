@@ -1,0 +1,1 @@
+# Add one VS Code extension id per line.
