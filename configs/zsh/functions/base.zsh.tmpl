@@ -1,0 +1,10 @@
+mkcd() {
+  mkdir -p "$1" && cd "$1"
+}
+
+path_prepend() {
+  case ":$PATH:" in
+    *":$1:"*) ;;
+    *) PATH="$1:$PATH" ;;
+  esac
+}

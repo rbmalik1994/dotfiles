@@ -1,0 +1,16 @@
+{{- $profile := promptStringOnce . "profile" "Machine profile (minimal/server/python-dev/node-dev/fullstack/personal/work; default minimal)" -}}
+{{- $extraModules := promptStringOnce . "extraModules" "Extra modules, comma-separated (optional)" -}}
+{{- $gitName := promptStringOnce . "gitName" "Git name" -}}
+{{- $gitEmail := promptStringOnce . "gitEmail" "Git email" -}}
+{{- $gitIdentity := promptStringOnce . "gitIdentity" "Git identity (personal/work; default personal)" -}}
+{{- $editor := promptStringOnce . "editor" "Default editor (nvim/code/vim; default nvim)" -}}
+{{- $guiApps := promptStringOnce . "guiApps" "Install GUI apps when supported? (true/false; default false)" -}}
+
+[data]
+profile = {{ default "minimal" $profile | quote }}
+extraModules = {{ $extraModules | quote }}
+gitName = {{ $gitName | quote }}
+gitEmail = {{ $gitEmail | quote }}
+gitIdentity = {{ default "personal" $gitIdentity | quote }}
+editor = {{ default "nvim" $editor | quote }}
+guiApps = {{ default "false" $guiApps | quote }}

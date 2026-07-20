@@ -1,0 +1,44 @@
+[user]
+	name = {{ .gitName | quote }}
+	email = {{ .gitEmail | quote }}
+
+[init]
+	defaultBranch = main
+
+[branch]
+	sort = -committerdate
+
+[tag]
+	sort = version:refname
+
+[pull]
+	rebase = false
+
+[push]
+	autoSetupRemote = true
+	default = simple
+
+[fetch]
+	prune = true
+	pruneTags = true
+
+[core]
+	editor = {{ .editor | quote }}
+	excludesfile = ~/.config/git/ignore
+	autocrlf = input
+
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+
+[merge]
+	conflictstyle = zdiff3
+
+[rerere]
+	enabled = true
+	autoupdate = true
+
+[help]
+	autocorrect = prompt

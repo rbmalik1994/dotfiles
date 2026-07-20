@@ -1,0 +1,6 @@
+name: shell-zsh
+description: Zsh shell configuration.
+depends:
+  - base
+package_groups:
+  - core

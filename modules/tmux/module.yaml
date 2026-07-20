@@ -1,0 +1,4 @@
+name: tmux
+description: tmux terminal multiplexer.
+package_groups:
+  - core

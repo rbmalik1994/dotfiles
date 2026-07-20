@@ -1,0 +1,4 @@
+name: macos-desktop
+description: macOS desktop setup hooks.
+os:
+  - macos

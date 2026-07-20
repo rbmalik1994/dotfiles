@@ -1,0 +1,4 @@
+name: neovim
+description: Neovim editor support.
+package_groups:
+  - core

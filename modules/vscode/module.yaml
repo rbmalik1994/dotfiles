@@ -1,0 +1,4 @@
+name: vscode
+description: VS Code user settings and keybindings.
+package_groups:
+  - editor

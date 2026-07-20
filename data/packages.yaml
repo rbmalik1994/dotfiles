@@ -1,0 +1,91 @@
+core:
+  macos:
+    - git
+    - curl
+    - zsh
+    - starship
+    - fzf
+    - ripgrep
+    - fd
+    - bat
+    - eza
+    - jq
+    - tmux
+    - neovim
+    - gh
+  apt:
+    - git
+    - curl
+    - wget
+    - zsh
+    - fzf
+    - ripgrep
+    - fd-find
+    - bat
+    - jq
+    - tmux
+    - neovim
+    - gh
+  dnf:
+    - git
+    - curl
+    - wget
+    - zsh
+    - fzf
+    - ripgrep
+    - fd-find
+    - bat
+    - jq
+    - tmux
+    - neovim
+    - gh
+  pacman:
+    - git
+    - curl
+    - wget
+    - zsh
+    - starship
+    - fzf
+    - ripgrep
+    - fd
+    - bat
+    - eza
+    - jq
+    - tmux
+    - neovim
+    - github-cli
+
+python:
+  macos:
+    - python
+    - pipx
+    - uv
+    - ruff
+  apt:
+    - python3
+    - python3-pip
+    - pipx
+  dnf:
+    - python3
+    - python3-pip
+    - pipx
+  pacman:
+    - python
+    - python-pipx
+    - uv
+    - ruff
+
+node:
+  macos:
+    - node
+    - pnpm
+  apt:
+    - nodejs
+    - npm
+  dnf:
+    - nodejs
+    - npm
+  pacman:
+    - nodejs
+    - npm
+    - pnpm

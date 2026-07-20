@@ -1,0 +1,6 @@
+{{ includeTemplate "configs/git/base.gitconfig.tmpl" . }}
+{{- if eq .gitIdentity "work" }}
+{{ includeTemplate "configs/git/work.gitconfig.tmpl" . }}
+{{- else }}
+{{ includeTemplate "configs/git/personal.gitconfig.tmpl" . }}
+{{- end }}
